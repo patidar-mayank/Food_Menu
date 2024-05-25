@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>this is templates</h1>
+    <h1>this is for checking</h1>
     
 </body>
 </html> -->
@@ -17,7 +18,8 @@
 {% for item in item_list %}
 <ul>
     <li>
-    {{item.id}} -- {{item.item_name}}
+    
+    <a href="/food/{{item.id}}">{{item.id}} -- {{item.item_name}}</a>
 </li>
 </ul>
 

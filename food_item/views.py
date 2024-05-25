@@ -28,3 +28,10 @@ def index(request):
 
 def item(request):
     return HttpResponse('<h1>this is second view</h1>')
+
+def detail(request,item_id):
+    item=Item.objects.get(pk=item_id)
+    context={
+        'item':item,
+    }
+    return render(request,'food\detail.html',context)
