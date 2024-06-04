@@ -8,9 +8,9 @@
             <img height="300px" src="{{item.item_image}} " class="card"/>
         </div>
         <div class="col-md-6">
-        <h1>{{item.item_name}}</h1>
-          <h2>{{item.item_desc}}</h2>
-            <h2>Rupees :{{item.item_price}}</h2>
+        <h1>{{objec.item_name}}</h1>
+          <h2>{{object.item_desc}}</h2>
+            <h2>Rupees :{{object.item_price}}</h2>
             <a href="{% url 'food:delete_item' item.id %}">Delete</a>
             
         </div>
