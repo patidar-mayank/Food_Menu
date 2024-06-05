@@ -16,5 +16,5 @@ class Item(models.Model):
     item_image=models.CharField(max_length=500,default="https://livingstonbagel.com/wp-content/uploads/2016/11/food-placeholder.jpg")
 
     def get_absolute_url(self):
-        return reverse('food:detail',kwargs={"pk": slef.pk})
+        return reverse('food:detail',kwargs={"pk": self.pk})
 
